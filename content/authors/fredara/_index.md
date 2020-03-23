@@ -1,10 +1,10 @@
 ---
 # Display name
-name: Fredara Hadley, Ph.D.
+name: Fredara Mareva Hadley, Ph.D.
 
 # Username (this should match the folder name)
 authors:
-- admin
+- fredara
 
 # Is this the primary user of the site?
 superuser: true
@@ -20,10 +20,10 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Fredara Mareva Hadley, Ph.D. is an ethnomusicology professor in the Department of Music History.
 
-# interests:
-# - Artificial Intelligence
-# - Computational Linguistics
-# - Information Retrieval
+interests:
+- Artificial Intelligence
+- Computational Linguistics
+- Information Retrieval
 
 # education:
 #   courses:

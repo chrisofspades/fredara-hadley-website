@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Nelson Bighetti
+name: Fredara Hadley, Ph.D.
 
 # Username (this should match the folder name)
 authors:
@@ -10,32 +10,32 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Professor of Ethnomusicology
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
-  url: ""
+- name: The Juilliard School
+  url: "https://www.juilliard.edu"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Fredara Mareva Hadley, Ph.D. is an ethnomusicology professor in the Department of Music History.
 
-interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+# interests:
+# - Artificial Intelligence
+# - Computational Linguistics
+# - Information Retrieval
 
-education:
-  courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+# education:
+#   courses:
+#   - course: PhD in Artificial Intelligence
+#     institution: Stanford University
+#     year: 2012
+#   - course: MEng in Artificial Intelligence
+#     institution: Massachusetts Institute of Technology
+#     year: 2009
+#   - course: BSc in Artificial Intelligence
+#     institution: Massachusetts Institute of Technology
+#     year: 2008
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -47,13 +47,8 @@ social:
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-- icon: github
-  icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://twitter.com/fredaraMareva
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -65,11 +60,9 @@ email: ""
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-- Researchers
-- Visitors
+# user_groups:
+# - Researchers
+# - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Fredara Mareva Hadley, Ph.D. is an ethnomusicology professor in the Department of Music History. Her core research considers how people of African descent use music genres to construct and maintain community. A native of West Palm Beach, Florida, she teaches courses on ethnomusicology and African American music. A native of West Palm Beach, Florida she earned an undergraduate degree from Florida A&M University; a Master of Arts in African American Studies from Clark-Atlanta University; and a Ph.D. in ethnomusicology from Indiana University. Hadley has been published in the Journal of Popular Music Studies, ICTM Yearbook, Billboard Magazine, and other outlets. She has presented at meetings for the Society for Ethnomusicology, Society for American Music, International Council for Traditional Music - Study Groups on African Music, and the Association for the Study of African American life and History. Her newest project focuses on Shirley Graham DuBois, one of the earliest Black women musicologists and opera composers. Hadley has been a faculty member since 2018.

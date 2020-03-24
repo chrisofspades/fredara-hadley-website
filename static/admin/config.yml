@@ -15,32 +15,12 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Summary", name: "summary", widget: "markdown"}
-      - label: "Draft"
-        name: "draft"
-        required: false
-        widget: "boolean"
-        default: false
-      - label: "Featured"
-        name: "featured"
-        required: false
-        widget: "boolean"
-        default: false
-      - label: "Authors"
-        name: "authors"
-        required: false
-        widget: "list"
-      - label: "Tags"
-        name: "tags"
-        required: false
-        widget: "list"
-      - label: "Categories"
-        name: "categories"
-        required: false
-        widget: "list"
-      - label: "Projects"
-        name: "projects"
-        required: false
-        widget: "list"
+      - {label: "Draft", name: "draft", required: false, widget: "boolean", default: false}
+      - {label: "Featured", name: "featured", required: false, widget: "boolean", default: false}
+      - {label: "Authors", name: "authors", required: false, widget: "list"}
+      - {label: "Tags", name: "tags", required: false, widget: "list"}
+      - {label: "Categories", name: "categories", required: false, widget: "list"}
+      - {label: "Projects", name: "projects", required: false, widget: "list"}
       - label: "Featured Image"
         name: "image"
         widget: object
@@ -54,7 +34,12 @@ collections:
                 multiple: false
           - {label: Caption, name: caption, widget: string, required: false}
           - {label: Description for screen readers, name: alt_text, widget: string, required: false}
-          - {label: "Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.", name: focal_point, widget: string, required: false, default: "Smart"}
+          - label: "Where's the focal point in the image?"
+            name: focal_point 
+            widget: select
+            required: false
+            default: "Smart"
+            options: ["Smart", "Center", "TopLeft", "Top", "TopRight", "Left", "Right", "BottomLeft", "Bottom", "BottomRight"]
           - {label: Thumbnail Only?, name: preview_only, widget: boolean, required: false, default: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: projects
@@ -68,19 +53,9 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Summary", name: "summary", widget: "markdown"}
-      - label: "Draft"
-        name: "draft"
-        required: false
-        widget: "boolean"
-        default: false
-      - label: "Tags"
-        name: "tags"
-        required: false
-        widget: "list"
-      - label: "Categories"
-        name: "categories"
-        required: false
-        widget: "list"
+      - {label: "Draft", name: "draft", required: false, widget: "boolean", default: false}
+      - {label: "Tags", name: "tags", required: false, widget: "list"}
+      - {label: "Categories", name: "categories", required: false, widget: "list"}
       - label: "Featured Image"
         name: "image"
         widget: object
@@ -110,11 +85,7 @@ collections:
           - {label: "Publish Date", name: "date", widget: "datetime"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
           - {label: "Summary", name: "summary", widget: "markdown"}
-          - label: "Draft"
-            name: "draft"
-            required: false
-            widget: "boolean"
-            default: false
+          - {label: "Draft", name: "draft", required: false, widget: "boolean", default: false}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "content/terms.md"
         label: "Terms"
@@ -124,9 +95,5 @@ collections:
           - {label: "Publish Date", name: "date", widget: "datetime"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
           - {label: "Summary", name: "summary", widget: "markdown"}
-          - label: "Draft"
-            name: "draft"
-            required: false
-            widget: "boolean"
-            default: false
+          - {label: "Draft", name: "draft", required: false, widget: "boolean", default: false}
           - {label: "Body", name: "body", widget: "markdown"}

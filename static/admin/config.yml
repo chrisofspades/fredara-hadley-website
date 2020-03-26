@@ -17,7 +17,7 @@ collections:
       - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Summary", name: "summary", widget: "markdown"}
       - {label: "Featured", name: "featured", required: false, widget: "boolean", default: false}
-      - {label: "Authors", name: "authors", required: false, widget: "list"}
+      - {label: "Authors", name: "authors", required: false, widget: "list", default: "fredara"}
       - {label: "Tags", name: "tags", required: false, widget: "list"}
       - {label: "Categories", name: "categories", required: false, widget: "list"}
       - {label: "Projects", name: "projects", required: false, widget: "list"}
@@ -89,7 +89,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Draft", name: "draft", required: false, widget: "boolean", default: false}
       - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Summary", name: "summary", widget: "markdown"}
       - {label: "Abstract", name: "abstract", widget: "markdown", required: false}
       - {label: "Event Name", name: "event", widget: string}
@@ -106,6 +105,61 @@ collections:
           - {label: Country, name: country, widget: string}
       - {label: "Tags", name: "tags", required: false, widget: "list"}
       - {label: "Categories", name: "categories", required: false, widget: "list"}
+      - label: "Featured Image"
+        name: "image"
+        widget: object
+        fields:
+          - label: "Upload an image named `featured.jpg/png`"
+            name: "filename"
+            widget: "image"
+            default: "featured"
+            media_library:
+              config:
+                multiple: false
+          - {label: Caption, name: caption, widget: string, required: false}
+          - {label: Description for screen readers, name: alt_text, widget: string, required: false}
+          - label: "Where's the focal point in the image?"
+            name: focal_point 
+            widget: select
+            required: false
+            default: "Smart"
+            options: ["Smart", "Center", "TopLeft", "Top", "TopRight", "Left", "Right", "BottomLeft", "Bottom", "BottomRight"]
+          - {label: Thumbnail Only?, name: preview_only, widget: boolean, required: false, default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: publications
+    label: Publications
+    label_singular: Publication
+    folder: 'content/publication'
+    path: '{{slug}}/index'
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", required: false, widget: "boolean", default: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Abstract", name: "abstract", widget: "markdown"}
+      - {label: "Summary", name: "summary", widget: "markdown", required: false}
+      - {label: "Featured", name: "featured", required: false, widget: "boolean", default: false}
+      - {label: "Authors", name: "authors", widget: "list", default: fredara}
+      - {label: "Tags", name: "tags", required: false, widget: "list"}
+      - {label: "Categories", name: "categories", required: false, widget: "list"}
+      - label: "Publication types"
+        name: "publication_type"
+        required: true
+        widget: "select"
+        multiple: true
+        options:
+          - { label: "Uncategorized", value: "0" }
+          - { label: "Conference paper", value: "1" }
+          - { label: "Journal article", value: "2" }
+          - { label: "Preprint / Working paper", value: "3" }
+          - { label: "Report", value: "4" }
+          - { label: "Book", value: "5" }
+          - { label: "Book section", value: "6" }
+          - { label: "Thesis", value: "7" }
+          - { label: "Patent", value: "8" }
+      - {label: Publication, name: publication, widget: string}
+      - {label: "Abbreviated publication name", name: publication_short, widget: string, required: false}
+      - {label: "Projects", name: "projects", required: false, widget: "list"}
       - label: "Featured Image"
         name: "image"
         widget: object

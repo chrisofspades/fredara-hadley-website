@@ -17,7 +17,7 @@ collections:
       - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Summary", name: "summary", widget: "markdown"}
       - {label: "Featured", name: "featured", required: false, widget: "boolean", default: false}
-      - {label: "Authors", name: "authors", required: false, widget: "list", default: "fredara"}
+      - {label: "Authors", name: "authors", required: false, widget: "list", default: ["fredara"]}
       - {label: "Tags", name: "tags", required: false, widget: "list"}
       - {label: "Categories", name: "categories", required: false, widget: "list"}
       - {label: "Projects", name: "projects", required: false, widget: "list"}
@@ -139,7 +139,7 @@ collections:
       - {label: "Abstract", name: "abstract", widget: "markdown"}
       - {label: "Summary", name: "summary", widget: "markdown", required: false}
       - {label: "Featured", name: "featured", required: false, widget: "boolean", default: false}
-      - {label: "Authors", name: "authors", widget: "list", default: fredara}
+      - {label: "Authors", name: "authors", widget: "list", default: ["fredara"]}
       - {label: "Tags", name: "tags", required: false, widget: "list"}
       - {label: "Categories", name: "categories", required: false, widget: "list"}
       - label: "Publication types"

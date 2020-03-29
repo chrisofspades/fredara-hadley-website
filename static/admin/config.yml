@@ -146,7 +146,6 @@ collections:
         name: "publication_type"
         required: true
         widget: "select"
-        multiple: true
         options:
           - { label: "Uncategorized", value: "0" }
           - { label: "Conference paper", value: "1" }

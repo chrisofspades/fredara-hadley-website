@@ -6,8 +6,10 @@ abstract: Testing the publication type in admin
 featured: false
 authors:
   - fredara
-publication_type: '4'
+publication_types:
+  - '4'
 publication: WIPMag
+publication_type: '4'
 image:
   filename: featured
   focal_point: Smart

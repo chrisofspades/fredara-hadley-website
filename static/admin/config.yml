@@ -159,7 +159,7 @@ collections:
           - { label: "Patent", value: "8" }
       - {label: Publication, name: publication, widget: string}
       - {label: "Abbreviated publication name", name: publication_short, widget: string, required: false}
-      - {label: "Projects", name: "projects", required: false, widget: "relation", collection: "projects", searchFields: ["title"], valueField: "{{slug}}", displayFields: ["title"]}
+      - {label: "Projects", name: "projects", required: false, widget: "list"}
       - label: "Featured Image"
         name: "image"
         widget: object

@@ -143,9 +143,10 @@ collections:
       - {label: "Tags", name: "tags", required: false, widget: "list"}
       - {label: "Categories", name: "categories", required: false, widget: "list"}
       - label: "Publication types"
-        name: "publication_type"
+        name: "publication_types"
         required: true
         widget: "select"
+        multiple: true
         options:
           - { label: "Uncategorized", value: "0" }
           - { label: "Conference paper", value: "1" }

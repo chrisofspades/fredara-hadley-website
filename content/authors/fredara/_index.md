@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Ethnomusicology
+role: Ethnomusicology Professor
 
 # Organizations/Affiliations
 organizations:

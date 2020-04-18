@@ -21,9 +21,9 @@ organizations:
 bio: Fredara Mareva Hadley, Ph.D. is an ethnomusicology professor in the Department of Music History.
 
 interests:
-- African and African Diasporic Music 
+- African and African Diasporic Music
 - Ethnomusicology of Classical Music
--  Popular Music Studies
+- Popular Music Studies
 
 # education:
 #   courses:
